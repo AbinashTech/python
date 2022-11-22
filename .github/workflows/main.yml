@@ -25,7 +25,7 @@ jobs:
         pip install -r requirements-dev.txt
     - name: Build with pyinstaller
       run: |
-        pyinstaller --onefile --noconsole cwss_cw_trex_3b\\main.py  
+        pyinstaller --onefile --noconsole MainScreenDisplay\\main.py  
   TestingProgress:
      needs: [BuildProgress]
      runs-on: windows-latest
